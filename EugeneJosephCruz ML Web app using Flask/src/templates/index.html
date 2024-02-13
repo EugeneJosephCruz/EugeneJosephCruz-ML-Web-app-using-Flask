@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Prediction</title>
+</head>
+<body>
+    <h2>Insurance Total Payment Prediction</h2>
+     <form action="{{ url_for('predict') }}" method="post">
+        <input type="text" name="X" placeholder="Enter number of claims" required="required" />
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction_text %}
+    <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
