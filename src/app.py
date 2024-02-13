@@ -4,7 +4,7 @@ import numpy as np
 from pickle import load
 
 #app = Flask(__name__)
-app = Flask(__name__, template_folder='./templates')
+app = Flask(__name__, template_folder='../templates')
 
 # Load the model
 model = load(open('../models/model.sav','rb'))
